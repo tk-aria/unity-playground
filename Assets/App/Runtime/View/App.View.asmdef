@@ -1,0 +1,15 @@
+{
+    "name": "App.View",
+    "references": [
+        "GUID:eb9584da57184407dbe7859497398ed9"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

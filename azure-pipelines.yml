@@ -1,0 +1,74 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+jobs:
+
+  # Windows
+  #- job: windows_build
+  #  displayName: windows build
+  #  pool:
+  #    vmImage: 'ubuntu-latest'
+  #
+  #  steps:
+  #  - script: echo Hello, world!
+  #    displayName: 'Run a one-line script'
+  #
+  #  - script: |
+  #      echo Add other tasks to build, test, and deploy your project.
+  #      echo See https://aka.ms/yaml
+  #    displayName: 'Run a multi-line script'
+  #
+  #  - task: UnityGetProjectVersionTask@1
+  #    inputs:
+  #      unityProjectPath: 'kk'
+  #
+  #  - task: UnityActivateLicenseTask@1
+  #    inputs:
+  #      username: 'sf'
+  #      password: 'sdf'
+  #      serial: 'sdf'
+  #      unityEditorsPathMode: 'unityHub'
+  #      unityProjectPath: 'sdf'
+  #
+  #  - task: UnityBuildTask@3
+  #    inputs:
+  #      buildTarget: 'standalone'
+  #      unityProjectPath: 'k'
+  #      outputPath: '$(Build.BinariesDirectory)'
+  #      outputFileName: 'drop'
+
+  # Doxygen
+  - job: doxygen_build
+    displayName: script reference build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - checkout: self
+      fetchDepth: 1
+      
+    - task: CmdLine@2
+      displayName: Doxygen
+      inputs:
+        script: |
+          sudo apt-get install doxygen doxygen-gui graphviz
+          dpkg -L graphviz
+          cd ./.documents && doxygen
+          
+    - task: PublishBuildArtifacts@1
+      displayName: 'Documents Artifact'
+      inputs:
+        PathtoPublish: '$(Build.SourcesDirectory)/.documents/ScriptReference'
+        ArtifactName: 'ScriptReference'
+        publishLocation: 'Container'
+        
+    - task: PublishBuildArtifacts@1
+      displayName: 'PostProcess: Project Artifact'
+      inputs:
+        PathtoPublish: '$(Build.SourcesDirectory)'
+        ArtifactName: 'project'
+        publishLocation: 'Container'

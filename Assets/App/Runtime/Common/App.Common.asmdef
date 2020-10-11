@@ -1,0 +1,15 @@
+{
+    "name": "App.Common",
+    "references": [
+        "GUID:cdb4e292d94e94eaea994f52546cc121"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+	<metadata>
+		<id>fontassets.nuspec</id>
+		<version>1.0.0</version>
+		<tags>Unity</tags>
+		<title>FontAssets</title>
+		<projectUrl>https://github.com/TK-Aria/FontAssets.git</projectUrl>
+		<authors>tkaria</authors>
+		<owners>tkaria</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>A description of what this package is and does.</description>
+		<releaseNotes>Notes for this specific release</releaseNotes>
+		<licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+		<iconUrl>https://www.nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+		<language>en-US</language>
+		<copyright>Copyright 2020</copyright>
+	</metadata>
+</package>

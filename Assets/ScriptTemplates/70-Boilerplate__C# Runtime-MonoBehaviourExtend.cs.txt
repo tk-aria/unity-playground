@@ -1,0 +1,32 @@
+/*
+  reference:
+    - attach here the references related to implementation
+*/
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using App.Runtime.Common;
+
+namespace App.Runtime
+{
+	/// <summary>
+	///  what class is responsible for what work?
+	/// </summary>
+	public sealed class #SCRIPTNAME# : MonoBehaviourExtend
+	{
+		#region Method
+
+		void Start()
+		{
+			#NOTRIM#
+		}
+
+		void Update()
+		{
+			#NOTRIM#
+		}
+
+		#endregion Method
+	}
+}

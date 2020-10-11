@@ -1,0 +1,45 @@
+# Don't touch EOLs
+# * -text
+
+# Actual text files
+*.cs diff=csharp text eol=lf
+*.cginc text eol=lf
+*.shader text eol=lf
+*.asmdef text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+*.uml text eol=lf
+*.uss text eol=lf
+*.config text eol=lf
+*.bat text eol=crlf
+*.sh text eol=lf
+*.command text eol=lf
+*.md text eol=lf
+.git* text eol=lf
+.editorconfig text eol=lf
+Doxyfile text eol=lf
+Makefile text eol=lf
+LICENSE text eol=lf
+
+# Unity files
+*.unity merge=unityyamlmerge text eol=lf
+*.prefab merge=unityyamlmerge text eol=lf
+*.meta merge=unityyamlmerge text eol=lf
+*.mat merge=unityyamlmerge text eol=lf
+*.anim merge=unityyamlmerge text eol=lf
+*.cubemap merge=unityyamlmerge text eol=lf
+*.fontsettings merge=unityyamlmerge text eol=lf
+*.physicMaterial merge=unityyamlmerge text eol=lf
+*.physicsMaterial2D merge=unityyamlmerge text eol=lf
+*.mask merge=unityyamlmerge text eol=lf
+*.overrideController merge=unityyamlmerge text eol=lf
+*.controller merge=unityyamlmerge text eol=lf
+*.flare merge=unityyamlmerge text eol=lf
+*.playable merge=unityyamlmerge text eol=lf
+*.spriteatlas merge=unityyamlmerge text eol=lf
+*.mixer merge=unityyamlmerge text eol=lf
+*.guiskin merge=unityyamlmerge text eol=lf
+*.asset merge=unityyamlmerge text eol=lf
+*.preset merge=unityyamlmerge text eol=lf
