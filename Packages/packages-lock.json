@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.aria.test-runner": {
+      "version": "0.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://pkgs.dev.azure.com/aria-inc/AriaPackage/_packaging/aria.packages/npm/registry"
+    },
     "com.aria.unity.editor-util": {
       "version": "1.0.2",
       "depth": 0,
@@ -79,13 +86,6 @@
       "dependencies": {},
       "hash": "81fbf3edadf49d06bf5fea8e05a529337daf7037"
     },
-    "com.coffee.ui-particle": {
-      "version": "3.0.0-preview.38",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://package.openupm.com"
-    },
     "com.cysharp.unitask": {
       "version": "2.0.36",
       "depth": 0,
@@ -113,6 +113,13 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://package.openupm.com"
+    },
+    "com.ourpalm.ilruntime": {
+      "version": "https://github.com/Ourpalm/ILRuntimeU3D.git?path=ILRuntimeDemo/Assets/ILRuntime#master",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "7df2bbe08e961b6f81873436da9a8995b44c28d7"
     },
     "com.svermeulen.extenject": {
       "version": "https://github.com/svermeulen/Extenject.git?path=UnityProject/Assets/Plugins/Zenject#master",
@@ -307,13 +314,6 @@
     },
     "com.unity.uiextensions": {
       "version": "2.1.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://package.openupm.com"
-    },
-    "com.unity.uiwidgets": {
-      "version": "1.0.0-preview",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
