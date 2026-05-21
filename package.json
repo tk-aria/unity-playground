@@ -16,6 +16,6 @@
   },
   "homepage": "https://github.com/TK-Aria/unity-boilerplate#readme",
   "devDependencies": {
-    "openupm-cli": "^1.11.0"
+    "openupm-cli": "^1.23.3"
   }
 }
